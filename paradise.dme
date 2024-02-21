@@ -2841,5 +2841,8 @@
 #include "code\modules\world_topic\status.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
+#include "modularHispania\code\datums\uplink_item_hispania.dm"
+#include "modularHispania\code\datums\spells\clown_hispania.dm"
 #include "modularHispania\code\game\jobs\modularAccess\access_override.dm"
+#include "modularHispania\code\game\objects\items\weapons\auto_piecannon.dm"
 // END_INCLUDE
