@@ -1,7 +1,7 @@
 /obj/vehicle/clowncar //codigo satisfactoriamente secuestrado de tg
 	name = "clown car"
 	desc = "How someone could even fit in there is byond me."
-	icon= 'modular_hispania/icons/obj/vehicles/vehicleh.dmi'
+	icon= 'modularHispania/icons/obj/vehicles/vehicleh.dmi'
 	icon_state = "clowncar"
 	key_type = /obj/item/bikehorn
 	vehicle_move_delay = 0
