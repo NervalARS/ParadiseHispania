@@ -2846,5 +2846,5 @@
 #include "modularHispania\code\datums\uplink_item.dm"
 #include "modularHispania\code\modules\pda\carth.dm"
 #include "modularHispania\code\modules\pda\utilitiesh.dm"
-#include "modularHispania\code\modules\vehicles\clowncar.dm"
+#include "modularHispania\code\modules\vehicle\clowncar.dm"
 // END_INCLUDE
