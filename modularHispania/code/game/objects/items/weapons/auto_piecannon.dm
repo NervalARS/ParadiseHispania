@@ -12,6 +12,6 @@
 		return
 
 /obj/item/gun/throw/piecannon/auto_piecannon/attack_self(mob/living/user)
-    to_chat(usr, "<span class='notice'>You holster your pie cannon. Another time.</span>")
-    qdel(src)
-    return
+	to_chat(usr, "<span class='notice'>You holster your pie cannon. Another time.</span>")
+	qdel(src)
+	return
