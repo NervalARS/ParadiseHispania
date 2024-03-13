@@ -70,8 +70,8 @@
 
 /datum/job/cmo/New() ///El CMO no tiene nada que hacer en ciencias, por eso reescribo sus accesos
 	access = list(
-		ACCESS_CHEMISTRY,ACCESS_CMO,ACCESS_EVA, ACCESS_HEADS,ACCESS_KEYCARD_AUTH,ACCESS_MAINT_TUNNELS,ACCESS_MEDICAL,ACCESS_MINERAL_STOREROOM,ACCESS_MORGUE,
-		ACCESS_PARAMEDIC,ACCESS_PSYCHIATRIST,ACCESS_SEC_DOORS,ACCESS_SURGERY, ACCESS_VIROLOGY)
+		ACCESS_CHEMISTRY,ACCESS_CMO,ACCESS_EVA, ACCESS_HEADS,ACCESS_MAINT_TUNNELS,ACCESS_MEDICAL,ACCESS_MINERAL_STOREROOM,ACCESS_MORGUE,
+		ACCESS_PARAMEDIC,ACCESS_PSYCHIATRIST,ACCESS_SEC_DOORS,ACCESS_SURGERY, ACCESS_VIROLOGY, ACCESS_KEYCARD_AUTH, ACCESS_RC_ANNOUNCE)
 
 /datum/job/doctor/New()
 	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_CHEMISTRY, ACCESS_PSYCHIATRIST, ACCESS_VIROLOGY, ACCESS_SURGERY, ACCESS_PARAMEDIC, ACCESS_MAINT_TUNNELS)
@@ -127,4 +127,29 @@
 	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS, ACCESS_FORENSICS_LOCKERS, ACCESS_MORGUE, ACCESS_COURT)
 	return ..()
 
-///Then end :)///
+
+
+///MINDSHIELD AQUI PORQUE NO IBA A HACER UNA SEGUNDA CARPETA CON UN SOLO FILE PARA ESTO///
+
+
+datum/outfit/job/chief_engineer/New()
+	bio_chips = list(/obj/item/bio_chip/mindshield)
+	return ..()
+
+datum/outfit/job/cmo/New()
+	bio_chips = list(/obj/item/bio_chip/mindshield)
+	return ..()
+
+datum/outfit/job/rd/New()
+	bio_chips = list(/obj/item/bio_chip/mindshield)
+	return ..()
+
+datum/outfit/job/hop/New()
+	bio_chips = list(/obj/item/bio_chip/mindshield)
+	return ..()
+
+
+
+
+///The end :)
+
