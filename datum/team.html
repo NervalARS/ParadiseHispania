@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;team - Paradise Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Paradise Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/team.html#var">Var Details</a> - <a href="datum/team.html#proc">Proc Details</a></header>
+<main>
+<h1>Antagonist Team <aside>/<a href="datum.html">datum</a>/<a href="datum/team.html">team</a></aside>
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L10">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 10"/></a></h1>
+
+<p>Datum used by team antagonists to track it's members and objectives the team needs to complete.</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/team.html#var/antag_datum_type">antag_datum_type</a></th><td>Type of antag datum members of this team have. Also given to new members added by admins.</td></tr>
+            <tr><th><a href="datum/team.html#var/blackbox_save_name">blackbox_save_name</a></th><td>The name to save objective successes under in the blackboxes. Saves nothing if blank.</td></tr>
+            <tr><th><a href="datum/team.html#var/members">members</a></th><td>A list of <a href="datum/mind.html" title="/datum/mind">minds</a> who belong to this team.</td></tr>
+            <tr><th><a href="datum/team.html#var/name">name</a></th><td>The name of the team.</td></tr>
+            <tr><th><a href="datum/team.html#var/objective_holder">objective_holder</a></th><td>A list of objectives which all team members share.</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/team.html#proc/add_member">add_member</a></th><td>Adds <code>new_member</code> to this team.</td></tr>
+            <tr><th><a href="datum/team.html#proc/add_team_objective">add_team_objective</a></th><td>Adds a team objective to each member's matching antag datum.</td></tr>
+            <tr><th><a href="datum/team.html#proc/admin_add_member">admin_add_member</a></th><td>Adds a new member to this team from a list of players in the round.</td></tr>
+            <tr><th><a href="datum/team.html#proc/admin_add_objective">admin_add_objective</a></th><td>Allows admins to add a team objective.</td></tr>
+            <tr><th><a href="datum/team.html#proc/admin_announce_objectives">admin_announce_objectives</a></th><td>Allows admins to announce objectives to all team members.</td></tr>
+            <tr><th><a href="datum/team.html#proc/admin_communicate">admin_communicate</a></th><td>Allows admins to send a message to all members of this team.</td></tr>
+            <tr><th><a href="datum/team.html#proc/admin_remove_member">admin_remove_member</a></th><td>Allows admins to remove a team member.</td></tr>
+            <tr><th><a href="datum/team.html#proc/admin_remove_objective">admin_remove_objective</a></th><td>Allows admins to remove a team objective.</td></tr>
+            <tr><th><a href="datum/team.html#proc/admin_rename_team">admin_rename_team</a></th><td>Allows admins to rename the team.</td></tr>
+            <tr><th><a href="datum/team.html#proc/get_admin_commands">get_admin_commands</a></th><td>A list of team-specific admin commands for this team. Should be in the form of <code>&quot;command&quot; = CALLBACK(x, PROC_REF(some_proc))</code>.</td></tr>
+            <tr><th><a href="datum/team.html#proc/get_antag_datum_from_member">get_antag_datum_from_member</a></th><td>Return an antag datum from a member which is linked with this team.</td></tr>
+            <tr><th><a href="datum/team.html#proc/get_target_excludes">get_target_excludes</a></th><td>Special overrides for teams for target exclusion from objectives.</td></tr>
+            <tr><th><a href="datum/team.html#proc/on_round_end">on_round_end</a></th><td>Displays the roundend stats for teams</td></tr>
+            <tr><th><a href="datum/team.html#proc/remove_member">remove_member</a></th><td>Removes <code>member</code> from this team.</td></tr>
+            <tr><th><a href="datum/team.html#proc/remove_team_objective">remove_team_objective</a></th><td>Remove a team objective from each member's matching antag datum.</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/antag_datum_type"><aside class="declaration">var </aside>antag_datum_type
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L18">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 18"/></a></h3>
+        <p>Type of antag datum members of this team have. Also given to new members added by admins.</p><h3 id="var/blackbox_save_name"><aside class="declaration">var </aside>blackbox_save_name
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L22">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 22"/></a></h3>
+        <p>The name to save objective successes under in the blackboxes. Saves nothing if blank.</p><h3 id="var/members"><aside class="declaration">var </aside>members
+            <aside>&ndash; /list/datum/mind</aside>
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L14">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 14"/></a></h3>
+        <p>A list of <a href="datum/mind.html" title="/datum/mind">minds</a> who belong to this team.</p><h3 id="var/name"><aside class="declaration">var </aside>name
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L12">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 12"/></a></h3>
+        <p>The name of the team.</p><h3 id="var/objective_holder"><aside class="declaration">var </aside>objective_holder
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/objective_holder.html">objective_holder</a></aside>
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L16">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 16"/></a></h3>
+        <p>A list of objectives which all team members share.</p><h2 id="proc">Proc Details</h2><h3 id="proc/add_member"><aside class="declaration">proc </aside>add_member<aside>(/<a href="datum.html">datum</a>/<a href="datum/mind.html">mind</a>/new_member) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L45">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 45"/></a></aside>
+        </h3>
+        <p>Adds <code>new_member</code> to this team.</p>
+<p>Generally this should ONLY be called by <code>add_antag_datum()</code> to ensure proper order of operations.</p><h3 id="proc/add_team_objective"><aside class="declaration">proc </aside>add_team_objective<aside>(/<a href="datum.html">datum</a>/<a href="datum/objective.html">objective</a>/O, _explanation_text, /<a href="mob.html">mob</a>/target_override) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L84">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 84"/></a></aside>
+        </h3>
+        <p>Adds a team objective to each member's matching antag datum.</p><h3 id="proc/admin_add_member"><aside class="declaration">proc </aside>admin_add_member<aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L66">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 66"/></a></aside>
+        </h3>
+        <p>Adds a new member to this team from a list of players in the round.</p><h3 id="proc/admin_add_objective"><aside class="declaration">proc </aside>admin_add_objective<aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L184">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 184"/></a></aside>
+        </h3>
+        <p>Allows admins to add a team objective.</p><h3 id="proc/admin_announce_objectives"><aside class="declaration">proc </aside>admin_announce_objectives<aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L200">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 200"/></a></aside>
+        </h3>
+        <p>Allows admins to announce objectives to all team members.</p><h3 id="proc/admin_communicate"><aside class="declaration">proc </aside>admin_communicate<aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L165">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 165"/></a></aside>
+        </h3>
+        <p>Allows admins to send a message to all members of this team.</p><h3 id="proc/admin_remove_member"><aside class="declaration">proc </aside>admin_remove_member<aside>(/<a href="mob.html">mob</a>/user, /<a href="datum.html">datum</a>/<a href="datum/mind.html">mind</a>/M) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L239">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 239"/></a></aside>
+        </h3>
+        <p>Allows admins to remove a team member.</p><h3 id="proc/admin_remove_objective"><aside class="declaration">proc </aside>admin_remove_objective<aside>(/<a href="mob.html">mob</a>/user, /<a href="datum.html">datum</a>/<a href="datum/objective.html">objective</a>/O) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L219">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 219"/></a></aside>
+        </h3>
+        <p>Allows admins to remove a team objective.</p><h3 id="proc/admin_rename_team"><aside class="declaration">proc </aside>admin_rename_team<aside>(/<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L227">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 227"/></a></aside>
+        </h3>
+        <p>Allows admins to rename the team.</p><h3 id="proc/get_admin_commands"><aside class="declaration">proc </aside>get_admin_commands<aside>() 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L259">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 259"/></a></aside>
+        </h3>
+        <p>A list of team-specific admin commands for this team. Should be in the form of <code>&quot;command&quot; = CALLBACK(x, PROC_REF(some_proc))</code>.</p><h3 id="proc/get_antag_datum_from_member"><aside class="declaration">proc </aside>get_antag_datum_from_member<aside>(/<a href="datum.html">datum</a>/<a href="datum/mind.html">mind</a>/member) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L101">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 101"/></a></aside>
+        </h3>
+        <p>Return an antag datum from a member which is linked with this team.</p><h3 id="proc/get_target_excludes"><aside class="declaration">proc </aside>get_target_excludes<aside>() 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L113">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 113"/></a></aside>
+        </h3>
+        <p>Special overrides for teams for target exclusion from objectives.</p><h3 id="proc/on_round_end"><aside class="declaration">proc </aside>on_round_end<aside>() 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L119">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 119"/></a></aside>
+        </h3>
+        <p>Displays the roundend stats for teams</p><h3 id="proc/remove_member"><aside class="declaration">proc </aside>remove_member<aside>(/<a href="datum.html">datum</a>/<a href="datum/mind.html">mind</a>/member) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L55">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 55"/></a></aside>
+        </h3>
+        <p>Removes <code>member</code> from this team.</p><h3 id="proc/remove_team_objective"><aside class="declaration">proc </aside>remove_team_objective<aside>(/<a href="datum.html">datum</a>/<a href="datum/objective.html">objective</a>/O) 
+        
+    
+            <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/blob/8c1e31816a6ad541311262b340d18dfe984c8620/code/modules/antagonists/_common/antag_team.dm#L93">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;antagonists&#x2F;_common&#x2F;antag_team.dm 93"/></a></aside>
+        </h3>
+        <p>Remove a team objective from each member's matching antag datum.</p></main>
+<footer>
+    paradise.dme
+    <a href="https://github.com/HispaniaSpaceStation13/ParadiseHispania/tree/8c1e31816a6ad541311262b340d18dfe984c8620">8c1e318</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.8.0</a></footer>
+</body>
+</html>
