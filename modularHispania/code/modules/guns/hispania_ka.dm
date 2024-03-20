@@ -37,7 +37,7 @@
 
 /obj/item/projectile/kinetic/premium/rapid
 	name = "Rapid kinetic force"
-	damage = 28
+	damage = 32
 	range = 3
 
 //Heavy KA
@@ -73,7 +73,7 @@
 	icon_state = "preciseka"
 	flight_x_offset = 16
 	flight_y_offset = 13
-	overheat_time = 30
+	overheat_time = 25
 	ammo_type = list(/obj/item/ammo_casing/energy/kinetic/premium/precise)
 	max_mod_capacity = 80
 	knife_x_offset = 21
@@ -98,7 +98,7 @@
 	icon_state = "modularka"
 	flight_x_offset = 15
 	flight_y_offset = 21
-	overheat_time = 45
+	overheat_time = 34
 	ammo_type = list(/obj/item/ammo_casing/energy/kinetic/premium/modular)
 	max_mod_capacity = 240
 	knife_x_offset = 14
@@ -125,7 +125,7 @@
 	knife_y_offset = 14
 	overheat_time = 27
 	ammo_type = list(/obj/item/ammo_casing/energy/kinetic/premium/byoka)
-	max_mod_capacity = 330
+	max_mod_capacity = 360
 
 /obj/item/ammo_casing/energy/kinetic/premium/byoka
 	projectile_type = /obj/item/projectile/kinetic/premium/byoka
@@ -148,12 +148,12 @@
 		EQUIPMENT("KA Range Increase", /obj/item/borg/upgrade/modkit/range, 1000),
 		EQUIPMENT("KA Super Chassis", /obj/item/borg/upgrade/modkit/chassis_mod, 250),
 		EQUIPMENT("KA White Tracer Rounds", /obj/item/borg/upgrade/modkit/tracer, 100),
-		EQUIPMENT("Premium Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka, 8000),
-		EQUIPMENT("Precise Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka/precise, 15000),
-		EQUIPMENT("Rapid Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka/rapid, 15000),
-		EQUIPMENT("Heavy Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka/heavy, 15000),
-		EQUIPMENT("Modular Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka/modular, 20000),
-		EQUIPMENT("Build-you-own-KA kit", /obj/item/gun/energy/kinetic_accelerator/premiumka/byoka, 30000),
+		EQUIPMENT("Premium Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka, 10000),
+		EQUIPMENT("Precise Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka/precise, 5000),
+		EQUIPMENT("Rapid Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka/rapid, 5000),
+		EQUIPMENT("Heavy Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka/heavy, 5000),
+		EQUIPMENT("Modular Accelerator", /obj/item/gun/energy/kinetic_accelerator/premiumka/modular, 8000),
+		EQUIPMENT("Build-you-own-KA kit", /obj/item/gun/energy/kinetic_accelerator/premiumka/byoka, 10000),
 	)
 
 #undef EQUIPMENT
