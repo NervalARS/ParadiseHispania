@@ -67,9 +67,9 @@
 								)
 
 /obj/item/clothing/mask/gas/sechailer/cloaker/ui_action_click(mob/user, actiontype)
-    if(actiontype == /datum/action/item_action/halt)
+	if(actiontype == /datum/action/item_action/halt)
 		halt()
-    else if(actiontype == /datum/action/item_action/selectphrase)
+	else if(actiontype == /datum/action/item_action/selectphrase)
 		var/key = phrase_list[phrase]
 		var/message = phrase_list[key]
 
