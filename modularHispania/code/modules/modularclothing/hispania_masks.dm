@@ -68,15 +68,15 @@
 
 /obj/item/clothing/mask/gas/sechailer/cloaker/ui_action_click(mob/user, actiontype)
     if(actiontype == /datum/action/item_action/halt)
-        halt()
+		halt()
     else if(actiontype == /datum/action/item_action/selectphrase)
-        var/key = phrase_list[phrase]
-        var/message = phrase_list[key]
+		var/key = phrase_list[phrase]
+		var/message = phrase_list[key]
 
-        phrase = (phrase < 20) ? (phrase + 1) : 1
-        key = phrase_list[phrase]
-        message = phrase_list[key]
-        to_chat(user,"<span class='notice'>You set the restrictor to: [message]</span>")
+		phrase = (phrase < 20) ? (phrase + 1) : 1
+		key = phrase_list[phrase]
+		message = phrase_list[key]
+		to_chat(user,"<span class='notice'>You set the restrictor to: [message]</span>")
 
 /obj/item/clothing/mask/gas/sechailer/cloaker/halt()
 	var/key = phrase_list[phrase]
